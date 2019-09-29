@@ -1,0 +1,158 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+}
+
+#btn-delete-all{
+    font-size:13px;
+}
+
+#btn-delete-all:hover, #btn-delete-all:focus{
+    text-decoration: none;
+    color:rgb(255, 68, 68)
+}
+
+.dim, .dim:hover, .dim:focus{
+    color:#ccc !important;
+    text-decoration:none;
+    cursor: default;
+}
+
+/* panel */
+.panel{
+    box-shadow: 3px 4px 9px 1px rgba(0,0,0,.08);
+    -webkit-box-shadow: 3px 4px 9px 1px rgba(0,0,0,.08);
+    -moz-box-shadow: 3px 4px 9px 1px rgba(0,0,0,.08);
+    -o-box-shadow: 3px 4px 9px 1px rgba(0,0,0,.08);
+    background: rgb(255,254,254);
+    background: -moz-linear-gradient(17deg, rgba(255,254,254,1) 64%, rgba(231,231,231,1) 86%);
+    background: -webkit-linear-gradient(17deg, rgba(255,254,254,1) 64%, rgba(231,231,231,1) 86%);
+    background: linear-gradient(17deg, rgba(255,254,254,1) 64%, rgba(231,231,231,1) 86%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffefe",endColorstr="#e7e7e7",GradientType=1);
+}
+
+.panel-default {
+    border-color: #dfdfdf;
+}
+
+.modal-header, .panel-default .panel-heading{
+    background-color: #c71044;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+    color:#fff;
+    padding:13px;
+    border:1px solid #c71044;
+    border-bottom: 3px solid #fca0a0;
+    font-size:17px;
+}
+/* end of panel */
+
+/* modal */
+.modal-content{
+    border-radius: 4px;
+    background-color: transparent
+}
+
+.modal-body, .modal-footer{
+    background-color: #fff;
+}
+.modal-backdrop{
+    opacity:0.8 !important;
+}
+/* end of modal */
+
+/* form & button */
+.form-control{
+    height: 38px;
+    padding: 10px 12px;
+    border: 1px solid #b4b4b4;
+    border-radius: 2px;
+}
+
+.btn{
+    border-radius:2px;
+    /* padding:4px 15px; */
+}
+
+.btn-danger {
+    background-color: #e36767;
+}
+
+.btn-primary {
+    background-color: #2a7ed9;
+} 
+
+/* end of form & button */
+
+/* pagination */
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
+    background-color: #2a7ed9;
+}
+
+/* end of pagination */
+
+.table>thead>tr>th{
+    color:#d73c62;
+    border-bottom:2px solid #ffb0b0
+}
+
+.table>tbody>tr>td{
+    border-top:1px dashed #c0c0c0 !important
+}
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 100000; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+#snackbar.snackbar-error{
+    background-color: #c71044; /* Black background color */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
+    animation: fadein 0.5s, fadeout 0.5s 3.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+    }
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+label.error{
+    font-weight: normal !important;
+    color:#ff0000;
+    padding:5px 0;
+    font-size:13px;
+}
